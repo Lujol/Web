@@ -1,0 +1,292 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>202001810 이용희 본인 소개 웹페이지</title>
+<style>
+
+
+	body{
+		background: #e7e6e6;
+		height: 100%;
+		width: 100%;
+	}
+	.top{
+		position: fixed;
+		width: 95%;
+		padding: 15px;
+		background: #333333;
+		z-index: 2;
+	}
+	.middle{
+		position: absolute;
+		margin : 20%;
+		margin-top: 10%;
+		width: 60%;
+		height: auto;
+		
+	}
+	.title{
+		display: inline-block;
+		margin-left: 30px;
+		color: white;
+	}
+	.menubar{
+		display: inline-block;
+		float: right;
+		margin-right: 30px;
+		color: white;
+		
+	}
+	.main{
+		width: 95%;
+		padding: 15px;
+		height: 100%;
+		background-image: url('image/key.jpg');
+		background-size: cover;
+
+	}
+	.info{
+		position: relative;
+		left: 40%;
+		top: 40%;
+		font-size: 50pt;
+		color: white;
+		width: 300pt;
+	}
+	.project{
+
+		display: inline-block;
+		width: 45%;
+		padding: 15px;
+		vertical-align: top;
+
+	}
+	#projectImage{
+		max-width: 90%;
+		padding: 5px;
+	}
+
+	.menu{
+		display: inline-block;
+		padding: 5px;
+
+	}
+
+	section{
+		text-align: center;
+		margin-top: 50px;
+		padding: 20px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	p{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#btn1{
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+
+	}
+	input[type=button]:hover{
+		background: aliceblue;
+	}
+
+</style>
+<script>
+
+	var menu =[];
+	var sectionList=[];
+	function init(){
+		menu = document.getElementsByTagName("li");
+		sectionList = document.getElementsByTagName("section");
+	}
+	function over(i){
+		menu[i].style.textDecoration = "underline";
+		menu[i].style.textDecorationColor = "white";
+		menu[i].style.textDecorationThickness = "2px";
+		menu[i].style.fontWeight="900";
+	}
+	function out(i){
+		menu[i].style.textDecoration = "none";
+		menu[i].style.fontWeight="400";
+
+	}
+
+	function moveto(i){
+		var sectionTop = sectionList[i].offsetTop+800;
+		console.log(sectionTop);
+		window.scrollTo( 0,sectionTop );
+	}
+	function moveUp(){
+		window.scrollTo( 0,0 );
+	}
+
+
+
+</script>
+
+</head>
+<body onload="init()">
+	<div class="top">
+		<header class="title">
+			<h3>이용희 Lee Yonghee</h3>
+		</header>
+		<nav class="menubar">
+			<ul style="list-style-type:none;">
+				<li class="menu" onclick="moveto(0)" onmouseover="over(0)" onmouseout="out(0)">자기 소개</li>
+				<li class="menu" onclick="moveto(1)" onmouseover="over(1)" onmouseout="out(1)">프로젝트 </li>
+				<li class="menu" onclick="moveto(2)" onmouseover="over(2)" onmouseout="out(2)">관심 기술</li>
+				<li class="menu" onclick="moveto(3)" onmouseover="over(3)" onmouseout="out(3)">사회 이슈</li>
+				<li class="menu" onclick="moveto(4)" onmouseover="over(4)" onmouseout="out(4)">미래 계획</li>
+			</ul>
+		</nav>
+		<hr>
+	</div>
+	<div class="main">
+		<div class="info">202001810</div>
+		<div class="info">이용희</div>
+		<div class="info">과제</div>
+	</div>
+	<div class="middle">
+		
+		<section onmouseover="over(0)" onmouseout="out(0)" > 
+			<h2>자기소개</h2>
+			<article> 
+				<p> 
+
+				개발자에 꿈을 가지게 된 가장 큰 계기는 고등학생이 될 때의 일입니다.
+				가정에 안좋은 일이 생겨 단순 현실도피용으로 하던 게임에 큰 흥미를 느끼고,
+				어떻게 만든걸까? 라는 의문에서 시작되었습니다. 
+  				이후 고등학교의 코딩 동아리에 들어가 기초적인 수준의 코딩을 해보고, 간단한 게임도 만들어보며
+				3학년 떄에는 동아리 부장을 맡아 제 후배들을 가르치기도 하였습니다.</p>
+				<p>
+				그때 막연히 '나 남들보다 코딩은 잘하는거 같은데?', '나중에 게임 만들어보고 싶다'
+				라는 생각에 진로를 개발자 쪽으로 정했지만,
+ 				안일한 생각으로 대학교에 올라왔기에 공부를 제대로 안하며
+ 				1,2학년 비대면 수업 , 군대를 마치고보니
+				저도 모르는 사이 저는 이미 다른 학생과 격차가 난 상태였습니다.
+ 				이대로는 안되겠다는 것을 깨닫고,
+  				이후 정신을 차리고 공부를 시작했고, 현재도 진행중입니다</p><br>
+  				
+ 				<h3>저는 한가지에 몰두를 잘 합니다. </h3>
+ 				<p>- 한번 시작하면 누구보다 좋은 집중력을 자신합니다</p><br>
+
+ 				<h3>저는 증명을 좋아합니다</h3>
+ 				<p>- 한가지 공식에 대해 단순히 외우고 넘어가는것이 아닌, 
+  			 	 이 공식이 어디에서 시작해 이런 결말이 나왔는지 직접 증명해보는것을 좋아합니다
+  				 이런 성격 덕분에 코딩 외적으로 이론 공부 역시 즐겁게 하는것이 
+  				 남들과는 다른 제 장점이라고 생각합니다.</p><br>
+
+
+ 				<h3>목표</h3> 
+ 				<p> 다른 학생과의 격차를 좁히는것으로 시작해 
+				제 자신이 만족할 수준까지 올라가 한 명의 개발자가 되어 취업을해 기반을 쌓고, <br>
+				최후에는 제가 개발한 게임을 파는것이 제 목표입니다.</p>
+
+
+				</p>
+
+				<a href="https://github.com/Lujol/Web.git">깃허브</a>
+
+			</article>
+
+		</section>
+
+		<section onmouseover="over(1)" onmouseout="out(1)"  >
+			<h2>프로젝트</h2>
+			<article class="project">
+				<h3>Unity</h3>
+				<video src="image/project1.mp4" width="100%" controls autoplay></video>
+				<p> 리듬 게임과 슈팅게임의 장르를 합하여 
+					박자에 맞춰서 움직여야 하는 게임을 만들었습니다.</p>
+				<p>	 가장 어려웠던 점은 박자를 맞춰야 하기에 
+					 노래, 눈에 보이는 노트, 플레이어가 키를 눌렀을떄의 판정 등 
+					 각각의 과정 사이 딜레이를 최소로 줄이는것이 가장 어려웠던것같습니다</p>
+
+				<p>	 이를 해결하기위해 위 코드들이 따로 박자를 세는것이 아닌,
+					 별도로 박자를 관리하는 코드를 따로 만들어 일정 시간(박자)이 될 떄마다  필요로하는 코드들에게 동시에 이벤트 신호를 보내는것으로 
+					 각 코드들 사이의 딜레이를 줄였습니다</p>
+
+			</article>
+			<article class="project">
+				<h3>python</h3>
+				<image src="image/project2.png"
+				id="projectImage">
+				<p>	python을 이용한 웹크롤링을 통해 실시간으로 웹사이트의 정보를 전달해주는 프로그램을 만들었습니다.</p>
+				 <p>	유저의 별도 조작 없이, 사이트에 올라오는 데이터를 
+						중복 없이 실시간으로 받아오는것에 가장 어려움을 느꼈지만</p>
+				 <p>	사이트의 가장 최근 데이터와 프로그램이 가지고 있는 
+				 데이터를 비교하여 중복을 체크, 중복이 아닐경우 그 다음 데이터도 계속 비교 해 누락이 없도록 코드를 만들었고 이를 일정 시간마다 반복하여 실행하도록 하였습니다. 
+				</p>
+			</article>
+		</section>
+
+		<section onmouseover="over(2)" onmouseout="out(2)" ><h2>관심 기술</h2>
+			<article>
+				<p>게임으로 유명한 넥슨, 스마일게이트 등의 대기업들의 지원 자격을 한번씩 읽어봤습니다.
+					대부분 c/c++ 프로그래밍 언어는 기본으로 사용할 수 있어야하고,
+					기업별, 각 프로젝트별로 언리얼 엔진 각각 3,4,5 버전, 유니티, DirectX 등
+					요구하는 기술이 조금씩 달랐습니다.</p>
+				<p> 또한 채용공고 역시 특정 프로젝트를 시작할 때 필요한 인재만을 찾아 
+					제가 하나의 기술만 관심을 가지고 공부해서는 힘들것이라 생각했습니다 </p>
+			 </article>
+		</section>
+
+
+		<section onmouseover="over(3)" onmouseout="out(3)" ><h2>사회 이슈</h2>
+			<article>
+				<h3>생성형 AI</h3>
+				<p> 작년부터 AI가 그림 그려준다, 음악을 만들어 준다 등 말이 많았습니다. 하지만 실제로 일상 생활 중에
+				 까지 영향을 미쳤나? 라고 생각한다면 아니었던것 같습니다</p>
+				<p>하지만 올해가 되고 저는 일상 생활에서도 정말 많은 ai의 작업물이 보았습니다.</p>
+				<p> 당장 유튜브만 틀어도 특정 사람의 목소리를 학습시켜 노래를 부르거나,
+				AI로 제작한 그림, 음성만을 사용하여 shorts에 올리는 사람이 굉장히 많아졌습니다.<br>
+				 영상 뿐만 아닌, 게임조차 ai로 만든 음악,그림등을 사용하여 만들고 그것을 실제로
+				팔면서 수익을 벌어들이고 있습니다.</p>
+				<p> 이를 보며 AI로 인해 일자리가 사라지는 일이 생각보다 더 빨리 오고있다는 생각이 들기도합니다.</p>
+				<p>그럼에도 저는 AI의 발전이 사람들에게 긍정적인 영향을 줄 것이라 생각합니다<br>
+					그 이유는 사람의 창의성은 무궁무진하다고 믿고, AI는 결국 사람의 데이터를 통해 학습하기에 
+				문제가 안 될 뿐만 아니라 사람의 작업을 더욱 편하게 해줄것이라 생각합니다</p>
+
+			</article>
+		</section>
+		
+		<section onmouseover="over(4)" onmouseout="out(4)" ><h2>미래 계획</h2>
+			<article>
+				<p>1. 게임 회사로 취업하려면 c++, 그래픽스, 선형대수학 등 여러 공부가 
+				 필요한것으로 알고있습니다.
+				 또한 저 자신도 이번 '컴퓨터 그래픽스' 강의를 들으며 그래픽스에 꽤 관심이 생겼기에 
+				 그래픽스 쪽으로 대학원을 준비하여 공부하는것을 고려 중 입니다.</p><br>
+
+				<p>2. 게임 회사 취업이 쉽지 않은것으로 알고있고, 대학교 졸업 후 공부를 할 여유가 없을 수도 
+				 있을것이라 생각합니다.
+				 따라서 국비지원 교육을 하는 교육원에서 교육을 듣는것 역시 고려중입니다.
+				  수료시 기업과 연계되어서 바로 면접을 보고 취업을 할 수 있기에 
+				  우선 백엔드 개발자로 경력과 기반을 쌓고, 후에 제가 원하는 공부와 
+				 회사 취업을 준비하는것 역시 좋다고 생각합니다</p>
+
+				  
+			</article>
+		</section>
+
+		<input type="button" id="btn1" value=" ^ " onclick="moveUp()">
+	</div>
+	
+
+
+</body>
+</html>
+
+
+
+
+		
+	
